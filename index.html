@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>Client of our SPA Router</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+
+      .u-wrapper {
+        max-width: 1024px;
+        padding: 0 1em;
+        box-sizing: border-box;
+      }
+      
+      header ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        height: 50px;
+        gap: 1em;
+        padding: 0;
+      }
+
+      header ul li button {
+        font-size: 1em;
+        padding: 0.5em;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="u-wrapper">
+        <ul>
+          <li><button onclick="router.loadRoute('')">Home</button></li>
+          <li><button onclick="router.loadRoute('contact')">Contact</button></li>
+          <li><button onclick="router.loadRoute('about')">About me</button></li>
+        </ul>
+      </div>
+    </header>
+    
+    <div class="u-wrapper" id="app"></div>
+
+    <script src="./routes.js"></script>
+    <script src="./router.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

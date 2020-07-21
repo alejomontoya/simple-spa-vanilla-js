@@ -1,0 +1,1 @@
+# A Simple SPA algorithm with vanilla JS
